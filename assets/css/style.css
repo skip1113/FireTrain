@@ -1,0 +1,11 @@
+.jumbotron{
+    text-align: center;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/4fcf5c8684aef9ce6e0a44b0/1494513221783-6IT3TJXRMM3ZT1DN9VS2/ke17ZwdGBToddI8pDm48kGPVK--wGoWXJsqwlxbZlQN7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z4YTzHvnKhyp6Da-NYroOW3ZGjoBKy3azqku80C789l0mwONMR1ELp49Lyc52iWr5enfxu_O4VeONvneR-F6W8oeFhFqSrYyNrfPB9Y70_gvQ/The+Crawford+Hotel+at+Union+Station+Denver");
+    color: blue;
+}
+.container{
+    background-color: grey;
+}
+#bodie {
+    background-color: darkblue;
+}
