@@ -77,9 +77,9 @@ database.ref().on("child_added", function (childSnapshot) {
     console.log("arrival Time: " + moment(nextTrain).format("hh:mm"));
     var newTrain = nextTrain.format("hh:mm");
     var newRow = $("<tr>").append(
-        $("<td>").text(name),
-        $("<td>").text(dest),
-        $("<td>").text(frequency),
+        $("<td>").text(tName),
+        $("<td>").text(tDest),
+        $("<td>").text(tFrequency),
         $("<td>").text(newTrain),
         $("<td>").text(minTillTrain)
     );
