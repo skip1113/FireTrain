@@ -36,17 +36,15 @@ $("#add-train").on("click", function (event) {
         time: time.valueOf(),
         frequency: frequency
     });
-    console.log(name);
-    console.log(dest);
-    console.log(time);
-    console.log(frequency);
-
+    // console.log(name);
+    // console.log(dest);
+    // console.log(time);
+    // console.log(frequency);
     $("#name-input").val("");
     $("#dest-input").val("");
     $("#time-input").val("");
     $("#freq-input").val("");
 });
-
 
 database.ref().on("child_added", function (childSnapshot) {
     var tName = childSnapshot.val().name;
@@ -60,9 +58,9 @@ database.ref().on("child_added", function (childSnapshot) {
     console.log(tFrequency);
     //First train input to convert 1 year before 
     var firstConverted = moment(time, "HH:mm").subtract(1, "years");
-    console.log("First Converted for first train " + firstConverted);
+    // console.log("First Converted for first train " + firstConverted);
     //current time
-    var realTime = moment();
+    // var realTime = moment();
     //difference between times
     var diffTime = moment().diff(moment(firstConverted), "minutes");
     console.log("This is the difference in time: " + diffTime);
@@ -84,5 +82,4 @@ database.ref().on("child_added", function (childSnapshot) {
         $("<td>").text(minTillTrain)
     );
     $("#train-table > tbody").append(newRow);
-
 });
