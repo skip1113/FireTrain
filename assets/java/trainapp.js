@@ -1,8 +1,8 @@
 //current time
-var currentTime = moment();
-console.log("This is my time " + moment(currentTime).format("hh:mm"));
+let currentTime = moment();
+// console.log("This is my time " + moment(currentTime).format("hh:mm"));
 //Firebase APIKey to store obeject
-var config = {
+let config = {
     apiKey: "AIzaSyAdce8DQPobszLvEP-jjpildTG5uNqoVLE",
     authDomain: "train-homework-dfb97.firebaseapp.com",
     databaseURL: "https://train-homework-dfb97.firebaseio.com",
@@ -14,7 +14,7 @@ var config = {
 };
 firebase.initializeApp(config);
 //Database 
-var database = firebase.database();
+let database = firebase.database();
 var name = "";
 var dest = "";
 var time = "";
